@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Form Pendaftaran Siswa</title>
+    <link rel="stylesheet" href="BahanUjian.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran</h2>
+
+    <label>Nama</label>
+    <input type="text" id="nama" placeholder="Masukkan nama">
+
+    <label>Kelas</label>
+    <input type="text" id="kelas" placeholder="Masukkan kelas">
+
+    <label>Ekstrakurikuler</label>
+    <div class="box">
+        <label><input type="checkbox" name="ekstra" value="Basket"> Basket</label>
+        <label><input type="checkbox" name="ekstra" value="Futsal"> Futsal</label>
+        <label><input type="checkbox" name="ekstra" value="Paduan Suara"> Paduan Suara</label>
+    </div>
+
+    <label>Jadwal</label>
+    <div class="box">
+        <label><input type="radio" name="jadwal" value="Pagi"> Pagi (07.00 - 12.00) </label>
+        <label><input type="radio" name="jadwal" value="Siang"> Siang (12.30-17.00) </label>
+        <label><input type="radio" name="jadwal" value="Sore"> Sore (17.30 - 20.30) </label>
+		<label><input type="radio" name="jadwal" value="Campuran"> Campuran (fleksibel)</label>
+    </div>
+
+    <div class="btn">
+        <button onclick="daftar()">Daftar Sekarang</button>
+        <button class="reset" onclick="resetForm()">Reset</button>
+    </div>
+
+    <div id="hasil">Form telah direset. Silakan isi ulang data pendaftaran. 
+</div>
+</div>
+
+<script src="BahanUjian.js"></script>
+</body>
+</html>
